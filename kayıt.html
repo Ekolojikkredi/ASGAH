@@ -1,0 +1,52 @@
+<!-- Kayıt Ol Butonu Tıklandığında Bu Sayfa Gösterilecek -->
+<div id="kayit" style="display:none;">
+    <h2>Kayıt Ol</h2>
+    <button onclick="showPage('okul-kayit')">Okul Kaydı</button>
+    <button onclick="showPage('ogrenci-kayit')">Öğrenci Kaydı</button>
+</div>
+
+<!-- Okul Kaydı Sayfası -->
+<div id="okul-kayit" style="display:none;">
+    <h3>Okul Kaydı</h3>
+    <form id="okulKayitForm">
+        <label for="okulAdi">Okul Adı:</label>
+        <input type="text" id="okulAdi" required><br><br>
+
+        <label for="il">İl:</label>
+        <input type="text" id="il" required><br><br>
+
+        <label for="ilce">İlçe:</label>
+        <input type="text" id="ilce" required><br><br>
+
+        <label for="okulSifre">Okul Şifresi:</label>
+        <input type="password" id="okulSifre" required><br><br>
+
+        <button type="submit">Okul Kaydı Yap</button>
+    </form>
+</div>
+
+<!-- Öğrenci Kaydı Sayfası -->
+<div id="ogrenci-kayit" style="display:none;">
+    <h3>Öğrenci Kaydı</h3>
+    <form id="ogrenciKayitForm">
+        <label for="ogrenciAd">Öğrenci Adı:</label>
+        <input type="text" id="ogrenciAd" required><br><br>
+
+        <label for="ogrenciSoyad">Öğrenci Soyadı:</label>
+        <input type="text" id="ogrenciSoyad" required><br><br>
+
+        <label for="ogrenciOkulNo">Okul Numarası:</label>
+        <input type="text" id="ogrenciOkulNo" required><br><br>
+
+        <label for="ogrenciEmail">Öğrenci Email:</label>
+        <input type="email" id="ogrenciEmail" required><br><br>
+
+        <label for="ogrenciTelefon">Öğrenci Telefon:</label>
+        <input type="tel" id="ogrenciTelefon" required><br><br>
+
+        <label for="ogrenciSinif">Öğrenci Sınıfı:</label>
+        <input type="text" id="ogrenciSinif" required><br><br>
+
+        <button type="submit">Öğrenci Kaydını Yap</button>
+    </form>
+</div>
